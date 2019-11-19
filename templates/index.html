@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+	<div class="center-on-page">  
+		<h1>Tempo em uma cidade</h1>
+
+		<form class="form-inline" method="POST" action="{{url_for('result')}}">
+
+		   <div class="select">
+			    <select name="comp_select" class="selectpicker form-control">
+			    	{% for city in data %}
+					<option value="{{city.name}}">{{city.name}}</option>
+					{% endfor %}
+			    </select>
+		   </div>
+
+		    <button type="submit" class="btn">Enviar</button>
+
+		</form>
+	</div>
+</body>

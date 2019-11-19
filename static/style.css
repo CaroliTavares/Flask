@@ -1,0 +1,14 @@
+body {
+	background-color: #2D2D2D;
+}
+
+h1 {
+	color: #C26356; /* setting the text color */
+	font-size: 30px; /* setting the size of the font */
+	font-family: Menlo, Monaco, fixed-width;
+}
+
+p {
+	color: white;
+	font-family: "Source Code Pro", Menlo, Monaco, fixed-width;
+}
